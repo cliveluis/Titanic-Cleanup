@@ -17,7 +17,7 @@ train = pd.read_csv('/kaggle/input/titanic/train.csv')
 # Preview
 print(train.head())
 
-```Text
+```text
 PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 0            1         0       3  ...   7.2500   NaN         S
 1            2         1       1  ...  71.2833   C85         C
@@ -30,5 +30,5 @@ PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 ```python
 print(f"Survival rate: {train['Survived'].mean():.2%}")
 
-```Text
+```text
 Survival rate: 38.38%
