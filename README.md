@@ -26,3 +26,9 @@ PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 4            5         0       3  ...   8.0500   NaN         S
 
 [5 rows x 12 columns]
+
+```python
+print(f"Survival rate: {train['Survived'].mean():.2%}")
+
+```Text
+Survival rate: 38.38%
