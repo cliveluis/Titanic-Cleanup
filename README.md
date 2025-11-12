@@ -8,17 +8,16 @@ Quick data load and preview of the Titanic dataset using **pandas**.
 - Calculated the **overall survival rate**
 
 ## Code & Output
+
 ```python
 import pandas as pd
-
 # Load data
 train = pd.read_csv('/kaggle/input/titanic/train.csv')
-
 # Preview
 print(train.head())
 
-```text
-PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+
+   PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 0            1         0       3  ...   7.2500   NaN         S
 1            2         1       1  ...  71.2833   C85         C
 2            3         1       3  ...   7.9250   NaN         S
@@ -27,8 +26,9 @@ PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 
 [5 rows x 12 columns]
 
-```python
 print(f"Survival rate: {train['Survived'].mean():.2%}")
 
-```text
+
 Survival rate: 38.38%
+
+
