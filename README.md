@@ -1,18 +1,18 @@
-# Titanic EDA (Exploratory Data Analysis)
+# Titanic EDA – Clive Luis
 
-Quick exploration of the Titanic dataset using Python and pandas in a Kaggle notebook.
+Quick data load and preview of the Titanic dataset using **pandas**.
 
 ## What I Did
-- Loaded the Titanic `train.csv` data
-- Printed the first 5 rows using `train_data.head()`
-- Made a small personal edit to the notebook
+- Loaded `train.csv` from the Titanic competition  
+- Previewed the first 5 rows with `train.head()`  
+- Calculated the **overall survival rate**
 
-## Live Notebook
-[View my notebook on Kaggle](https://www.kaggle.com/code/cliveluisaa/clivetitanic-v1)
+## Code & Output
+```python
+import pandas as pd
 
+# Load data
+train = pd.read_csv('/kaggle/input/titanic/train.csv')
 
-## Purpose
-Practice data loading and basic EDA — perfect for interviews or portfolio building.
-
----
-*Clive | Data Analyst | 14+ years experience*
+# Preview
+print(train.head())
